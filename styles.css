@@ -2,27 +2,26 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center; /* توسيط المحتوى أفقيًا */
-    align-items: center; /* توسيط المحتوى عموديًا */
-    height: 100vh; /* جعل ارتفاع الجسم 100% من ارتفاع الشاشة */
+    background-color: #0e0e0e;
+    color: #686666;
 }
 
 .container {
     width: 80%;
     max-width: 900px;
-    background: #fff;
+    background: #090909;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    box-shadow: 0 0 20px rgba(22, 22, 22, 0.1);
+    padding-top: 30px;
+    margin: 40px auto; /* توسيط الحاوية داخل الجسم */
     text-align: center; /* توسيط النص داخل الحاوية */
 }
 
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 20px;
+    background: #00a2ff;
+    color: #141414;
+    padding: 40px 20px 30px 20px;
+    text-align:center;
 }
 
 header h1 {
@@ -31,15 +30,18 @@ header h1 {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin: 10px 0;
+    object-fit: cover;
+    border: 3px solid #070707;
+    display: block;
+    margin: 20px auto 15px auto;
 }
 
 .section {
     padding: 20px;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #fefbfb;
 }
 
 .section:last-child {
@@ -66,4 +68,15 @@ header h1 {
 
 .contact {
     padding: 20px;
+}
+/* تنسيق نصوص الوصف والتقنيات */
+.project-item p {
+    color: #ffffff; /* تم تغيير اللون إلى الأبيض ليصبح واضحاً */
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* إذا كنت تستخدم القوائم العادية وتريد تغيير لون عناصرها */
+.project-item li {
+    color: #ffffff; /* لون أبيض لعناصر القائمة */
 }
